@@ -1,6 +1,45 @@
+@font-face {
+    font-family: Input;
+    src: url('Input-Regular.ttf');
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin-left: 20%;
+    font-family: Input;
+}
+
+a {
+    margin-left:1em;
+    color: white;
+    font-weight: bold;
+}
+
 p {
+    width: 45%;
 }
-h3 {
+
+#headline {
+    display:inline-block;
+}
+
+#headline h1,
+#headline h2 {
     margin-bottom:0em;
+    margin-top:0em;
 }
+
+#contact p {
+    margin-bottom:0em;
+    margin-top:0em;
+}
+
+#footer {
+    position: absolute;
+    margin: auto;
+    margin-bottom: 1em;
+    bottom: 0px;
+}
+
 
