@@ -30,6 +30,11 @@ p {
     margin-top:0em;
 }
 
+#headline hr {
+    width:105%;
+    margin-left:-2.5%;
+}
+
 #contact p {
     margin-bottom:0em;
     margin-top:0em;
@@ -60,4 +65,10 @@ p {
         font-size:20px;
         width:100%;
     }
+
+    #headline hr {
+        width:100%;
+        margin-left:0em;
+    }
+
 }
