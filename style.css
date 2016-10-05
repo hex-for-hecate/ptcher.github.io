@@ -40,6 +40,15 @@ p {
     margin-top:0em;
 }
 
+#bio-headline {
+    transform-origin: center center;
+    transform: rotate(2deg) translateY(25px);
+}
+
+#contact-headline {
+    transform-origin: center center;
+    transform: rotate(-1deg);
+}
 
 #footer-content {
     position: absolute;
