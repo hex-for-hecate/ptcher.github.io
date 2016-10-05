@@ -42,4 +42,22 @@ p {
     bottom: 0px;
 }
 
+@media only screen and (max-device-width: 500px) {
+    body {
+        margin-left:0em;
+        font-size:14px;
+    }
 
+    p {
+        width:100%;
+    }
+
+    a {
+        font-size:12px;
+    }
+
+    #headline {
+        font-size:20px;
+        width:100%;
+    }
+}
