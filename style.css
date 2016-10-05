@@ -40,11 +40,11 @@ p {
     margin-top:0em;
 }
 
-#footer {
+#footer em {
     position: absolute;
+    bottom: 0px;
     margin: auto;
     margin-bottom: 1em;
-    bottom: 0px;
 }
 
 @media only screen and (max-device-width: 500px) {
