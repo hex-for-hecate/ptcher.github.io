@@ -8,6 +8,10 @@ body {
     color: white;
     margin-left: 20%;
     font-family: Input;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -17,7 +21,35 @@ a {
 }
 
 p {
-    width: 45%;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#page {
+    text-align: justify;
+    width: 40%;
+    margin: 0 auto;
+}
+
+div.sidenote-left {
+    float: left;
+    margin-left: -175px;
+    margin-top: -1em;
+}
+
+div.sidenote-right {
+    float: right;
+    margin-right: -175px;
+}
+
+div.sidenote-left,
+div.sidenote-right {
+    width: 150px;
+    text-align: left;
+    font-size: 12px;
 }
 
 #headline {
@@ -66,6 +98,18 @@ p {
     body {
         margin-left:0em;
         font-size:14px;
+        width: 100%;
+    }
+
+    #wrapper {
+    width: 100%;
+    }
+
+    #page {
+    text-align: justify;
+    width: 95%;
+    margin-left: 1em;
+    margin-right: 1em;
     }
 
     p {
