@@ -54,6 +54,8 @@ div.sidenote-right {
 
 #headline {
     display:inline-block;
+    width: 110%;
+    margin-left: -5%;
 }
 
 #headline h1,
@@ -123,6 +125,7 @@ div.sidenote-right {
     #headline {
         font-size:20px;
         width:100%;
+        margin-left:0em;
     }
 
     #headline hr {
