@@ -85,9 +85,15 @@ div.sidenote-right {
     transform: rotate(-1deg);
 }
 
+#footer {
+    margin-top: 2em;
+}
+
+#footer hr {
+}
+
 #footer-content {
     position: absolute;
-    bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
