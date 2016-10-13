@@ -30,7 +30,7 @@ p {
 
 #page {
     text-align: justify;
-    width: 40%;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -53,9 +53,10 @@ div.sidenote-right {
 }
 
 #headline {
+    top:0px;
     display:inline-block;
-    width: 110%;
-    margin-left: -5%;
+    width: 740px;
+    margin-left: -20px;
 }
 
 #headline h1,
@@ -96,6 +97,18 @@ div.sidenote-right {
     opacity: 0.3;
 }
 
+#name {
+    transform: skewY(14deg) translateY(90px);
+}
+
+#title {
+    transform: skewY(-20deg) translateY(-95px);
+}
+
+#location {
+    transform: skewY(10deg) translateY(-40px) translateX(220px);
+}
+
 @media only screen and (max-device-width: 500px) {
     body {
         margin-left:0em;
@@ -126,6 +139,7 @@ div.sidenote-right {
         font-size:20px;
         width:100%;
         margin-left:0em;
+        float: top;
     }
 
     #headline hr {
@@ -133,4 +147,9 @@ div.sidenote-right {
         margin-left:0em;
     }
 
+    #name,
+    #title,
+    #location {
+        transform: translate(0px);
+    }
 }
