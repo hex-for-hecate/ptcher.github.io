@@ -4,8 +4,8 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #111;
+    color: #EEE;
     margin-left: 20%;
     font-family: Input;
     text-align: center;
@@ -78,6 +78,13 @@ div.sidenote-right {
 #bio-headline {
     transform-origin: center center;
     transform: rotate(2deg) translateY(25px);
+}
+
+div#photo-frame {
+}
+
+img#photo {
+    width: 150px;
 }
 
 #contact-headline {
