@@ -20,8 +20,16 @@ a {
     font-weight: bold;
 }
 
+p {
+    font-weight: lighter;
+}
+
 p.publication {
     font-size: 12px;
+}
+
+span.me {
+    font-weight: bolder;
 }
 
 #wrapper {
