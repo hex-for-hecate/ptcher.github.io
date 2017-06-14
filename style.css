@@ -20,7 +20,8 @@ a {
     font-weight: bold;
 }
 
-p {
+p.publication {
+    font-size: 12px;
 }
 
 #wrapper {
