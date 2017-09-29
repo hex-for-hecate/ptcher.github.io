@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #111;
+    background-color: #2F2F2F;
     color: #EEE;
     margin-left: 20%;
     font-family: Input;
@@ -129,6 +129,10 @@ img#photo {
 
 #location {
     transform: skewY(10deg) translateY(-40px) translateX(220px);
+}
+
+span .me {
+    color: #5CA9F7;
 }
 
 @media only screen and (max-device-width: 500px) {
