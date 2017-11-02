@@ -95,6 +95,7 @@ div#photo-frame {
 
 img#photo {
     width: 150px;
+    border-radius: 50%;
 }
 
 #contact-headline {
@@ -130,10 +131,6 @@ img#photo {
 
 #location {
     transform: skewY(10deg) translateY(-40px) translateX(220px);
-}
-
-span .me {
-    color: #5CA9F7;
 }
 
 @media only screen and (max-device-width: 500px) {
