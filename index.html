@@ -2,8 +2,60 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/lib/normalize/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/core/css/fluid.css" />
+
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+
+        <!--[if lte IE 8]>
+            <script type="text/javascript">document.createElement("header")</script>
+            <script type="text/javascript">document.createElement("nav")</script>
+            <script type="text/javascript">document.createElement("footer")</script>
+            <script type="text/javascript">document.createElement("section")</script>
+            <script type="text/javascript">document.createElement("aside")</script>
+        <![endif]-->
+
+        <script type="text/javascript" src="lib/infusion/infusion-custom.js"></script>
+        <script type="text/javascript" src="js/floe.js"></script>
     </head>
     <body>
+        <script type="text/javascript">
+$(document).ready(function () {
+    floe.setupUIO();
+});
+        </script>
+
+        <!-- BEGIN markup for Preference Editor -->
+        <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+            <!--
+                This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+                A separate panel bar for mobile displays is needed to preserve the correct tab order.
+            -->
+            <div class="fl-panelBar fl-panelBar-smallScreen">
+                <span class="fl-prefsEditor-buttons">
+                    <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+                    <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                </span>
+            </div>
+
+            <!-- This is the div that will contain the Preference Editor component -->
+            <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+            <!--
+                This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+                A separate panel bar for desktop displays is needed to preserve the correct tab order.
+            -->
+            <div class="fl-panelBar fl-panelBar-wideScreen">
+                <span class="fl-prefsEditor-buttons">
+                    <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+                    <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                </span>
+            </div>
+        </div>
+        <!-- END markup for Preference Editor -->
         <div id="wrapper">
             <div id="page">
                 <div id="headline">
