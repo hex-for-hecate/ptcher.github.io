@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+svg#mainscreen {
+    width: 1px;
+    height: 1px;
+    overflow: visible;
+}
+
+polygon.level-container {
+}
+
+rect.turn-block {
+    fill: transparent;
+}
+
+text.cover-indicator {
+    font: italic small-caps bold 28px cursive;
+    fill: white;
+}
+
+polyline.draw-line {
+    stroke: white;
+    stroke-dasharray: 4;
+    fill: transparent;
+}
+
+polygon.player-shape {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+circle.enemy-shape {
+    filter: drop-shadow( 0px 0px 3px rgba(210, 91, 0, .7));
+}
+
+.debug {
+    stroke: transparent;
+    fill: transparent;
+    stroke-width: 2px;
+}
