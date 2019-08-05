@@ -21,6 +21,17 @@
  *   
  */
 
+function randomNumberBetween(bottom, top, decimals) {
+    let range = Math.abs(top - bottom);
+    let between = Math.random() * range;
+    if (top > bottom) {
+        between = bottom + between;
+    } else {
+        between = top + between;
+    }
+    return Math.floor(between * Math.pow(10, decimals)) / Math.pow(10, decimals)
+}
+
 playing = true;
 
 let game = {
@@ -242,7 +253,7 @@ function step(timestamp) {
         if (!containedBy(game.enemy.shape, game.level.shape)) {
             game.enemy.position.x -= 2 * Math.cos(game.enemy.direction) * game.enemy.speed;
             game.enemy.position.y -= 2 * Math.sin(game.enemy.direction) * game.enemy.speed;
-            game.enemy.direction -= 0.5 * Math.PI;
+            game.enemy.direction -= 0.5 * Math.PI + randomNumberBetween(-0.5, 0.5, 2);
         }
 
         // FIXME
